@@ -340,7 +340,7 @@ div#navbarNav.collapse.navbar-collapse {
 
 .navbar-brand,
 .navbar-brand:hover {
-  padding-left: 10px;
+  padding-left: 0px;
   font-family: 'Goldman';
 }
 
