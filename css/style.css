@@ -316,34 +316,32 @@ ul#filters {
 
 #navigation {
   background-color: #fff;
-  padding: 10px 10px;
+  padding: 10px 30px;
   z-index: 100;
   width: 100%;
   box-shadow: 0px 3px 10px #d4d4d4 ;
 }
 
 #navigation li {
-  padding: 0 10px;
-  margin: 0 auto;
+  padding: 0 20px;
 }
 
 #navigation li a {
-  color: #424242;
+  color: #0D274D;
 }
 
 #navigation li a:hover {
-  color: #7657FA
+  text-decoration: underline #B8D757 2px;
 }
 
 div#navbarNav.collapse.navbar-collapse {
-  justify-content: center;
-  margin-left: -195px;
+  justify-content: flex-end;
 }
 
 .navbar-brand,
 .navbar-brand:hover {
-  color: #424242;
   padding-left: 10px;
+  font-family: 'Goldman';
 }
 
 .navbar-toggler-icon {
