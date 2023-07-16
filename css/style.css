@@ -144,7 +144,7 @@ body {
   display: inline-block;
   margin-top: 20px;
   border-radius: 30px;
-  border: #036;
+  border: 3px solid #036;
 }
 
 .contactButton:hover {
