@@ -53,7 +53,7 @@ body {
 }
 
 .skillsSection.section {
-  background-color: #000;
+  background-color: #121212;
 }
 .contactSection {
   background-color: #fff;
@@ -61,7 +61,7 @@ body {
   border: 1px solid #d5d5d5 20%;
 }
 .thanksSection.section {
-  background-color: #000;
+  background-color: #121212;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -200px;
