@@ -401,12 +401,15 @@ h6 {
 
 p {
   font-weight: 500;
-  font-size: large;
+  font-size: x-large;
 }
-
+ul {
+   font-size: x-large;
+  font-weight: 500;
+}  
 li  {
-  font-size: medium;
-  font-weight: large;
+  font-size: x-large;
+  font-weight: 500;
 }
 
 .material-icons {
