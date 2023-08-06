@@ -343,6 +343,7 @@ div#navbarNav.collapse.navbar-collapse {
 .navbar-toggler-icon {
   background: url(../img/menu.png);
   background-size: 100%;
+  display:flex;
   float: right;
   right: 0;
 }
