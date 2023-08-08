@@ -6,6 +6,12 @@ body {
   font-family: 'Poppins' !important;
 }
 
+@media only screen and (max-width: 480px) {
+.mainImage {
+  width: 50%;
+  height: 50%;
+  }
+}
 .titleMessage {
   position: absolute;
   width: 100%;
