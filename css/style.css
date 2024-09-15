@@ -174,7 +174,7 @@ li {
      padding-left: 5px !important;
   }
   .navbar-brand img {
-    max-width: 70vw;
+    max-width: 60vw;
     padding-top: 1px !important;
     padding-bottom: 1px !important;
   }
@@ -200,7 +200,7 @@ li {
     padding-right: 10px;
   }
   .navbar-brand img {
-    max-width: 70vw;
+    max-width: 60vw;
     padding-top: 1px !important;
     padding-bottom: 1px !important;
   }
@@ -372,7 +372,7 @@ li {
 }
 
 .thanks-container {
-  max-width: 10vw; /* Maximum width of the image container */
+  max-width: 20vw; /* Maximum width of the image container */
   margin: 0 auto;
 }
 
