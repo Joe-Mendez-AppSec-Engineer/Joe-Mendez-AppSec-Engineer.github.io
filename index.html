@@ -1,441 +1,650 @@
-<!DOCTYPE html>
-<html>
+body {
+  color: #ffffff;
+  background-color: #121212 !important;
+  font-family: "Roboto Flex", sans-serif !important;
+}
 
-<head>
-	<title>Joe Mendez: Pentesting/Cybersecurity</title>
+.roboto-flex-font {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
 
+#document {
+  margin: 0 auto;
+}
 
-	<link rel="stylesheet" type="text/css" href="css/superslides.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="shortcut icon" type="image/x-icon" href="img/joe-mendez-cyber-security-website-favicon-white(1).png" />
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://kit.fontawesome.com/c75a0766ea.js" crossorigin="anonymous"></script>
-</head>
+.landing-image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
 
-<body>
-
-	<div class="loader">
-		<div class="inner"></div>
-	</div>
-
-	<div id="slides">
-
-
-
-		<div class="slides-container">
-			<img src="img/joe-mendez-cyber-security-high-resolution-color-logo.png" alt="" style="display: block; max-width: 100%; height: auto; margin-top: 20px;">
-
-		</div>
-
-			<svg class="arrows">
-		              <path class="a1" d="M0 0 L30 32 L60 0"></path>
-		              <path class="a2" d="M0 20 L30 52 L60 20"></path>
-		              <path class="a3" d="M0 40 L30 72 L60 40"></path>
-        		</svg>
-
-
-
-	</div>
-
-
-	<nav id="navigation" class="navbar navbar-expand-lg">
-		<a class="navbar-brand" href="#" style="font-weight: bold; font-size: 22px;">
-			<div class="slides-container">
-				<img src="img/joe-mendez-cyber-security-low-resolution-logo-white-on-transparent-background.png" style="width: 30%; height: 30%;">
-			</div>
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link" href="#navigation"  style="font-weight: light; font-size: 14px;">
-						HOME
-					</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#about"  style="font-weight: light; font-size: 14px;">
-						ABOUT
-					</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#stats"  style="font-weight: light; font-size: 14px;">
-						STATS
-					</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#blog"  style="font-weight: light; font-size: 14px;">
-						BLOG
-					</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#work"  style="font-weight: light; font-size: 14px;">
-						WORK
-					</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#contact"  style="font-weight: light; font-size: 14px;">
-						CONTACT
-					</a>
-				</li>
-			</ul>
-		</div>
-
-	</nav>
-
-	<div id="about" class="section">
+/* Common styles for all landing images */
+.landing-image {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto;
+}
 
 
-		<div class="container" style="text-align: center;">
+/* Default to desktop image */
+.desktop-image {
+  display: block;
+}
 
-				<div class="col-md-12">
+.mobile-image {
+  display: none;
+}
+.pdf-container {
+    width: 80%;
+    height: 80vh; /* Make it responsive but not take full height on desktop */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc; /* Optional: To show boundaries */
+}
 
-					<div class="col-md-12 text-center">
-						<div class="slides-container">
-							<img src="img/aboutMe.jpg" alt="" style="padding-bottom: 10px; width: 40%; height: 50%; display: block; margin-left: auto; margin-right: auto; ">
-						</div>
-					</div>
+.desktop-device {
+    display:block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
-					<div class="row" style="margin-top: 40px;">
+.mobile-device {
+  display:none;
+}
 
-						<div class="col-md-12"  style="color: black;">
-							<p>
-								Hello, my name is Joseph Mendez and I am an accomplished Cloud Security Engineer with extensive expertise across the three leading cloud platforms:
-								AWS, Azure, and GCP.  With a proven track record in ensuring data privacy,
-								regulatory compliance, and seamless operations, I am dedicated to enabling businesses to leverage
-								the full potential of cloud technologies while maintaining the highest level of security.
-							</p>
-							<p>
-								With a strong passion for securing cloud infrastructures, I bring a wealth of knowledge and practical experience
-								in designing, implementing, and maintaining robust security solutions in the cloud. My deep understanding of cloud architecture combined
-								with my proficiency in cloud security best practices, allow me to develop tailored strategies that fortify organizations against
-								potential threats and vulnerabilities.
-							</p>
-							<p>
-								With a proven track record in ensuring data privacy,
-								regulatory compliance, and seamless operations, I am dedicated to enabling businesses to leverage
-								the full potential of cloud technologies while maintaining the highest level of security.
-							</p>
-							<p>
-								Displayed below is a showcase of my blog, presenting its latest post alongside convenient access to an array of archived articles. Additionally, I invite you to peruse my credentials,
-								delve into my professional journey, and explore my wealth of experience. Don't hesitate to get in touch by clicking the "contact" button provided – I'm readily available to connect with you at any time!
-							</p>
-						</div>
+p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
 
-				</div>
+li {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
 
-			</div>
+@media only screen and (max-width: 1024px) {
+  .landing-image {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 
-		</div>
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  div.thanks-container {
+    max-width: 65vw; /* Maximum width of the image container */
+    height: 100%;
+  }
+  .thanks-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+  #navigation {
+    min-width: 550px;
+  }
+}
 
-	</div>
-	<div id="blog" class="skillsSection section">
+@media only screen and (max-width: 750px) {
+  #navigation {
+    padding: 10px 10px !important;
+    z-index: 100;
+    width: 100% !important;
+    background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(60px);
+    /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+    margin-top: 0% !important;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    z-index: 100;
+    border-radius: 0px !important;
+    max-width: 100vw !important;
+    min-width: 100vw;
+  }
+  .landing-image {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  div.thanks-container {
+    max-width: 65vw; /* Maximum width of the image container */
+    height: 100%;
+  }
+  .thanks-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+  #about {
+    padding: 10 0;
+  }
+  .pdf-container {
+    width: 100%;
+    height: 100%; /* Make it responsive but not take full height on desktop */
+    max-width: 95vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .1px solid transparent; /* Optional: To show boundaries */
+  }
+  .desktop-device {
+    display:none;
+  }
 
-		<div class="container" style="color:#c1c1c6">
-				<div class="slides-container">
-							<img src="img/blog.png" alt="" style="padding-top: -50px; padding-bottom: 50px; width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto; ">
-				</div>
-				<h4 style="color:#c1c1c6;">"The Hidden Toll: Unveiling the True Cost of Cyberattacks"</h4>
-				<h6 style="color:#c1c1c6; padding-bottom: 30px">August Eighteenth, Two Thousand Twenty-Three</h6>
-				<p>
-					In today's digitally interconnected world, the relentless advancement of technology has brought unprecedented opportunities and conveniences, but it has also opened the floodgates to a new breed of 
-					threats – cyberattacks. These attacks, ranging from data breaches to ransomware, have proven to be not only a significant challenge to businesses and individuals but have also unveiled a
-					staggering and often hidden cost. In this blog, we will delve into the multifaceted dimensions of the cost of cyberattacks, exploring both their direct and indirect impacts on various sectors of society.
-				</p>
-				<p style="padding-top: 15px; font-weight:600;">
-					The Financial Toll>
-				</p>
-				<p>
-					At the forefront of the cost of cyberattacks lies the financial burden. Direct financial losses stemming from stolen data, disrupted operations, and ransom payments can be astronomical. 
-					Businesses often face a double-edged sword – not only dealing with immediate financial losses but also enduring long-term reputational damage that can hamper customer trust and loyalty.
-				</p>
-				<p style=" padding-top: 15px;">
-					1. Financial Losses: A single successful cyberattack can lead to massive financial losses, including data loss, theft of intellectual property, 
-					and unauthorized access to financial accounts. The cost of remediation, which involves identifying and addressing vulnerabilities, can be equally substantial.
-				</p>
-				<p style=" padding-top: 15px;">
-					2. Ransomware Payments: The rise of ransomware attacks has seen businesses and institutions fork over millions of dollars to regain access to their own data. 
-					While paying the ransom might seem like a quick solution, it can also encourage attackers to continue their nefarious activities.
-				</p>
-				<p style="padding-top: 15px;">
-					3. Regulatory Fines and Legal Fees: The legal ramifications of a cyberattack can include regulatory fines for non-compliance with data protection laws,
-					not to mention the legal fees required for defending against lawsuits.
-				</p>
-				<p style=" padding-top: 15px; font-weight:600;">
-					The Human Toll
-				</p>
-				<p>
-					Behind the scenes of every cyberattack, there are real people whose lives are disrupted. The personal toll of cyberattacks can't be overlooked.
-				</p>
-				<p style="padding-top: 15px;">
-					1. Employee Stress and Productivity: Employees working in organizations hit by cyberattacks experience heightened stress levels as they grapple with compromised
-					systems and disrupted workflows. Productivity takes a hit, resulting in lost working hours and potential long-term psychological effects.
-				</p>
-			<p style=" padding-top: 15px;">
-					2. Identity Theft and Privacy Breaches: Individual victims of cyberattacks often experience identity theft, with personal and financial information falling into the hands of malicious actors. The emotional distress and financial setbacks that follow can be devastating.
-				</p>
-			<p style=" padding-top: 15px; font-weight:600;">
-					The Societal Toll
-				</p>
-				<p>
-					Beyond the immediate targets, cyberattacks cast a wide net, affecting entire societies and economies.
-				</p>
-			<p style=" padding-top: 15px;">
-					1. Critical Infrastructure Disruption: Critical infrastructure, such as power grids and healthcare systems,
-					is increasingly reliant on digital technology. Disruptions caused by cyberattacks can have cascading effects, endangering public safety and welfare.
-				</p>
-			<p style=" padding-top: 15px;">
-					Economic Impact: The broader economy can suffer as businesses grapple with downtime, reduced consumer trust, and decreased investor confidence. 
-				Smaller businesses may be forced to close their doors entirely, exacerbating unemployment rates.
-				</p>
-				<p style=" padding-top: 15px; font-weight:600;">
-				Prevention and Mitigation
-				</p>
-				<p>
-			The cost of cyberattacks is vast, but it's not an insurmountable challenge. Organizations and individuals alike can take steps to prevent and mitigate the impact of cyberattacks.
-				</p>
-			<p style=" padding-top: 15px;">
-					1. Cybersecurity Investment: Organizations should prioritize cybersecurity investment, including robust firewalls, intrusion detection systems, 
-				and employee training programs. Proactive measures can significantly reduce the risk of successful attacks.
-				</p>
-			<p style=" padding-top: 15px;">
-				2. Data Backup and Recovery Plans: Regular data backups and well-defined recovery plans can mitigate the impact of ransomware attacks,
-				allowing businesses to restore operations more swiftly and avoid paying ransoms.
-				</p>
-			<p style=" padding-top: 15px;">
-				3. Global Collaboration: Governments, international organizations, and the private sector must collaborate to establish global norms and regulations for cyberspace, ensuring a united front against cyber threats.
-				</p>
-			<p style="padding-top: 15px;">
-				The cost of cyberattacks reaches far beyond the financial realm, affecting individuals, organizations, and societies on multiple levels. While the challenges are undeniable, a concerted effort to bolster cybersecurity, increase awareness, and collaborate on a global scale can help to mitigate the devastating impact of cyberattacks. 
-				As we navigate this evolving digital landscape, understanding the true cost is the first step toward building a more secure and resilient future.
-				</p>
+  .mobile-device {
+    display:block;
+    width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+  ul {
+     padding-left: 5px !important;
+  }
+}
 
-			</div >
-		<div class="col-md-12 text-center" style="padding-top: 50px;">
-			<a href="https://josephmendez-cybersecurity.github.io/archive" class="contactButton">Archives</a>
-		</div>
-	</div>
-</div>
+@media only screen and (max-width: 576px) {
 
+  .landing-image {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-	<div id="stats" class="statsSection section" style="border-bottom: solid 5px #036">
+  .pdf-container {
+    width: 100%;
+    height: 100%; /* Make it responsive but not take full height on desktop */
+    max-width: 95vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .1px solid transparent; /* Optional: To show boundaries */
+  }
+  .desktop-device {
+    display:none;
+  }
 
-		<div class="container">
-			<div class="col-md-20 text-center">
-				<div class="slides-container">
-					<img src="img/stats.jpg" alt="" style="margin-bottom: 20px; width: 40%; height: 40%; display: block; margin-left: auto; margin-right: auto; ">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="squareItem">
-						<div class="squareInnerContainer" style="height: 250px">
-							<div style="margin-top: 50px" class="squareIcon">
-								<i style="color: #036" class="fa fa-calendar"></i>
-							</div>
-							<div class="squareContent">
-								<h3 style="margin-top: 30px; margin-bottom: 10px;">I have</h3>
-								<h2 class="counter">7</h2>
-								<h3>years of experience</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="squareItem">
-						<div class="squareInnerContainer" style="height: 250px">
-							<div style="margin-top: 50px" class="squareIcon">
-								<i style="color:#036" class="fa fa-user-circle"></i>
-							</div>
-							<div class="squareContent">
-								<h3 style="margin-top: 30px; margin-bottom: 10px">securing the cloud for over</h3>
-								<div class="counter" style="font-size: 34px; padding-bottom: 15px">1750000</div>
-								<h3>daily active users</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="squareItem">
-						<div class="squareInnerContainer" style="height: 250px">
-							<div style="margin-top: 50px" class="squareIcon">
-								<i style="color:#036" class="fa fa-cloud"></i>
-							</div>
-							<div class="squareContent">
-								<h3 style="margin-top: 30px; margin-bottom: 10px;">on</h3>
-								<h2 class="counter">3</h2>
-								<h3>different cloud platforms.</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+  .mobile-device {
+    display:block;
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    padding: 0px 10px;
+  }
 
-		</div>
+  #about {
+    padding: 10 0;
+  }
+  h5.heading-section {
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-	</div>
-	<div id="work" class="section">
+  .heading-section {
+    text-align: center;
+  }
 
-		<div class="container">
+  p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
 
-			
+  li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  container.text-center.quote {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h5.quote {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navbar-toggler-icon {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  .text-box {
+    max-width: 95vw;
+    width: 100%;
+  }
+  .text-box2 {
+    max-width: 95vw;
+    width: 100%;
+  }
 
-				<div class="heading" style="display: block; margin: 0 auto;">
-					<div class="slides-container">
-						<img src="img/myResume.jpg" alt="" style="width: 50%; height: 50%; display:inline-flexbox; margin-left: auto; margin-right: auto; ">
-					</div>
-				</div>
-			<div>
-				<a>
-				<img src="img/dynamo.jpg" alt="" style="width: 15%; height: 15%; float: left; padding-right: 20px; padding-bottom: 15px;">
-				</a>
-				<h4>Cloud Security Engineer | Dynamo Technologies | Department of Homeland Security | Washington, D.C.</h4>
-				<h6>2023-2024</h6>	
-				<li>
-					Architected and maintained highly available Kubernetes clusters across multiple environments, ensuring 99.99% uptime for critical applications.
-				</li>
-				<li style="padding-top: 15px;">
-					Collaborated with development teams to optimize application performance and resource utilization in Docker containers.
-				</li>
-				<li style="padding-top: 15px;">
-					Managed Infrastructure as Code (IaC) using Terraform, facilitating rapid provisioning and scaling of resources on Azure and AWS.
-				</li>
-				<li style="padding-top: 15px;">
-					Designed and implemented CI/CD pipelines using Jenkins, reducing manual intervention, and enhancing development speed.
-				</li>
-					<div class="itemsContainer" style="padding-top: 25px; margin-bottom: 20px; border-bottom: solid 5px #036; padding-top: 20px">
+  div.thanks-container {
+    max-width: 90vw; /* Maximum width of the image container */
+    height: 100%;
+  }
+  .thanks-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+  }
 
-						
-					</div>
-			</div >
-			<div>
-				<a>
-				<img src="img/NYC_DOE_Logo.png" alt="" style="width: 15%; height: 15%; float: left; padding-right: 20px; padding-bottom: 15px;">
-				</a>
-				<h4>Cybersecurity Engineer | New York City Department of Education | New York, NY</h4>
-				<h6>2021-2023</h6>
-				<li style="margin-top: -10px;">
-				Orchestrated containerized applications using Kubernetes, enabling horizontal scaling, and increasing application availability.
-				</li>
-				<li style="padding-top: 15px;">
-					Utilized Docker to containerize applications, leading to improved development-to-production parity and reducing deployment-related issues.
-				</li>
-				<li style="padding-top: 15px;">
-					Implemented Infrastructure as Code (IaC) principles using Terraform, ensuring consistent and reproducible infrastructure deployments across different environments.
-				</li>
-				<li style="padding-top: 15px;">
-					Led the documentation of infrastructure configurations and processes.
-				</li>
-				
-					<div class="itemsContainer" style="margin-top: 15px; border-bottom: solid 5px #036; padding-bottom: 20px;">
+  #navigation {
+    padding: 10px 10px !important;
+    z-index: 100;
+    width: 100% !important;
+    background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(60px);
+    /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+    margin-top: 0% !important;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    z-index: 100;
+    border-radius: 0px !important;
+    max-width: 100vw !important;
+    min-width: 100vw;
+  }
+  .fixedNav #navigation {
+    position: fixed;
+    top: 0;
+  }
+  ul {
+     padding-left: 10px !important;
+  }
+}
 
-						
-					</div>
-			</div >
-			<div style="padding-top: 20px;">
-				<a>
-				<img src="img/msLogo.png" alt="" style="width: 9%; height: 9%; float: left; padding-right: 20px; padding-bottom: 10px;">
-				</a>
-				<h4>Software Engineer | Millennial Shift Technologies | Phoenix, AZ</h4>
-				<h6>2020-2021</h6>
-				<li>
-					Designed and developed secure APIs and middle-tier code to safeguard sensitive client data.
-				</li>	
-				<li style="padding-top: 15px;">
-					Engineered scalable solutions, ensuring data security for the 1st, 3rd, and 5th largest wholesale insurance companies in the United States
-				</li>
-				<li style="padding-top: 15px;">
-					Optimized APIs and code to streamline the Millennial Shift App, eliminating bottlenecks and inefficiencies.
-				</li>
-					 <div class="itemsContainer" style="margin-top: 20px; border-bottom: solid 5px #036; padding-top: 15px; ">
-	
-	
-					</div>
-			</div>
-			<div style="padding-top: 20px;">
-				
-				<h4>Software Engineer | PWF | Tulsa, OK</h4>
-				<h6>2019</h6>
-				<li>
-					Developed a comprehensive Python search application encompassing database management, API integration, and frontend/backend architecture.
-				</li>	
-				<li style="padding-top: 15px;">
-					Engineered multiple full-stack web applications for diverse clients, leveraging JavaScript and various JavaScript libraries to enhance functionality and user experience.
-				</li>
-				<div class="itemsContainer" style="margin-top: 20px; border-bottom: solid 5px #036; padding-top: 15px; ">
-	
-	
-					</div>
-			</div>		
-			<div style="padding-top: 20px;">
+.flex-container {
+  display: flex;
+}
 
-				<h4>Mobile Engineer | Self-Employed | Las Vegas, NV</h4>
-				<h6>2017-2019</h6>
-				<li>Developed and published two high-quality iOS applications to the App Store that were downloaded in 26 countries worldwide.</li>
-				<li style="padding-top: 15px;">Integrated Firebase with mobile applications to enhance real-time data synchronization, user authentication, and analytics, improving app performance and user experience.</li>
+.text-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 540px;
+  padding: 14px 70px;
+  background: rgba(18, 18, 18, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #f1f1f1;
+  z-index: 1;
+  white-space: nowrap;
+  font-weight: 400;
+  font-style: normal;
+}
+.section {
+  padding: 40px 0px;
+}
 
-		</div>
-				
-				
-					
-			</div>
-		</div>			
-	</div>
-	<div id="contact" class="contactSection section" style="margin-top: 20px;  border-top: solid 5px #036;">
+.aboutImage {
+  max-width: 100%;
+}
 
-		<div class="col-md-12 text-center">
+.intro {
+  margin-top: 40px;
+  font-size: large;
+}
 
-			<div class="heading">
-				<div class="slides-container">
-					<img src="img/contactLabel.jpg" alt="" style="width: 27%; height: 27%; display: block; padding-left: 3px; padding-top: 20px; margin-left: auto; margin-right: auto; ">
-				</div>
-			</div>
-				<a href="mailto:josephmendez.cybersec@gmail.com" class="contactButton">Contact</a>
+.skillsSection.section {
+  background-color: #121212;
+  color: #ffffff;
+}
 
-			</div>
-		</div>
+.statsSection h4 {
+  color: #333333;
+}
 
-	</div>
+.contactSection {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
 
+.statsSection {
+  background-color: #121212 !important;
+}
 
-	<div id="thanks" class="thanksSection section">
+.skill {
+  text-align: center;
+}
 
-		<div class="container" style="margin-left: auto; margin-right: auto; text-align: center; padding-top: 20px;">
-			<h5>
-			Thank you for visiting my website and reading my blog; I hope you enjoyed yourself. Also, feel free to get in touch anytime through the contact button above.<br>
+.thanks-container {
+  max-width: 10vw; /* Maximum width of the image container */
+  margin: 0 auto;
+}
 
-			</h5>
-			<h5 style="margin-top: 40px;">
-				&copy;2023 Joseph Mendez
-			</h5>
-		</div>
-	</div>
+.thanks-container img {
+  width: 100%; /* Make the image responsive */
+  height: auto;
+}
 
-	<script src="js/countUp.js"></script>
-	<script src="js/countUp-jquery.js"></script>
-	<script src="js/jquery.superslides.min.js"></script>
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/typed.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+.chart {
+  position: relative;
+  max-width: 152px;
+  max-height: 152px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+}
 
-	<script src="js/script.js"></script>
+.chart canvas {
+  margin: auto;
+  display: block;
+}
+.canvas {
+  margin: auto;
+  display: block;
+}
 
-</body>
+.squareItem {
+  margin-top: 28px;
+  position: relative;
+}
 
-</html>
+.squareInnerContainer {
+  align-items: center;
+  padding: 25px 35px;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(19, 52, 214, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.squareContent h2 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.squareContent h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.squareContent h4 {
+  color: #fff;
+}
+
+.counter {
+  color: #fff;
+}
+
+.squareIcon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.downloadButton {
+  color: #ffffff;
+  font-size: 1.275rem;
+  font-weight: 400;
+  padding: 0.6rem 1.95rem;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 35px;
+  background: rgba(19, 52, 214, 0.15);
+  box-shadow: 0 4px 12px 0 #00ADD8;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  outline: none;
+  transition: 0.75s ease-in-out;
+}
+
+.downloadButton:hover {
+  transition: 0.75s ease-in-out;
+  background: #00ADD8;
+  color: #fff;
+  text-decoration: none;
+}
+
+.downloadButton:hover svg {
+  stroke-dashoffset: -480;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 0.75s ease-in-out;
+}
+
+.contactButton {
+  color: #ffffff;
+  font-size: 1.275rem;
+  font-weight: 400;
+  padding: 0.6rem 1.95rem;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 35px;
+  background: rgba(19, 52, 214, 0.15);
+  box-shadow: 0 4px 14px 0 #00ADD8;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  outline: none;
+  transition: 0.75s ease-in-out;
+}
+
+.contactButton:hover {
+  transition: 0.75s ease-in-out;
+  background: #00ADD8;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contactButton:hover svg {
+  stroke-dashoffset: -480;
+}
+.section .heading {
+  text-align: center;
+  width: 100%;
+}
+/****************************************      NavBar     **************************************************/
+#navigation {
+  margin-top: 1%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-right: 40px;
+  padding-left: 30px;
+  z-index: 100;
+  width: 100%;
+  max-width: 50vw;
+  border-radius: 45px;
+  background: rgba(39, 39, 39, 0.1);
+  backdrop-filter: blur(10px);
+  /* fallback for old browsers */
+  -webkit-backdrop-filter: blur(10px);
+  border: 0.25px solid rgba(255, 255, 255, 0.2);
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+}
+
+#navigation li {
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+#navigation li a {
+  color: #ffffff;
+  font-size: 0.875rem !important;
+  font-weight: 500;
+}
+
+#navigation li a:hover {
+  text-decoration: underline solid #00ADD8 2px;
+}
+
+div#navbarNav.collapse.navbar-collapse {
+  justify-content: right;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
+
+.navbar-brand img {
+    height: 38px; /* Adjust the height of the logo */
+    width: auto;  /* Keeps the aspect ratio of the logo */
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.img-responsive {
+  width: 100%;
+  height: 100%;
+}
+/**************************************** NavBar End  **************************************************/
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+
+.loader .inner {
+  width: 100%;
+  height: 100%;
+  background: url(../img/Sphere_rotating_transparency.gif) center center no-repeat;
+  background-color: #000000;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+div.skill {
+  margin-top: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.titleMessage {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 5%;
+  z-index: 5;
+  text-align: center;
+}
+
+.titleMessage .arrow {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  } /* Closing the first block */
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
