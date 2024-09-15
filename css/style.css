@@ -173,6 +173,11 @@ li {
   ul {
      padding-left: 5px !important;
   }
+  .navbar-brand img {
+    max-width: 70vw;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -518,6 +523,7 @@ svg {
   z-index: 100;
   width: 100%;
   max-width: 50vw;
+  min-width: 830px;
   border-radius: 45px;
   background: rgba(39, 39, 39, 0.1);
   backdrop-filter: blur(10px);
