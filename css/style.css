@@ -139,6 +139,7 @@ li {
     padding-left: 10px;
     padding-right: 10px;
   }
+  
   div.thanks-container {
     max-width: 65vw; /* Maximum width of the image container */
     height: 100%;
@@ -193,11 +194,10 @@ li {
     padding-left: 10px;
     padding-right: 10px;
   }
-    .navbar-brand img {
-      height: 8vw; /* Adjust the height of the logo */
-      width: auto;  /* Keeps the aspect ratio of the logo */
-      padding-top: 1px !important;
-      padding-bottom: 1px !important;
+  .navbar-brand img {
+    max-width: 70vw;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
   }
   .pdf-container {
     width: 100%;
