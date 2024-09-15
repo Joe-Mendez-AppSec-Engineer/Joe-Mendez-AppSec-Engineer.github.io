@@ -50,14 +50,14 @@ body {
 }
 
 .desktop-device {
-    display:block;
+    display: block;
     width: 100%;
     height: 100%;
     border: none;
 }
 
 .mobile-device {
-  display:none;
+  display: none;
 }
 
 p {
@@ -193,7 +193,12 @@ li {
     padding-left: 10px;
     padding-right: 10px;
   }
-
+    .navbar-brand img {
+      height: 8vw; /* Adjust the height of the logo */
+      width: auto;  /* Keeps the aspect ratio of the logo */
+      padding-top: 1px !important;
+      padding-bottom: 1px !important;
+  }
   .pdf-container {
     width: 100%;
     height: 100%; /* Make it responsive but not take full height on desktop */
@@ -297,6 +302,8 @@ li {
      padding-left: 10px !important;
   }
 }
+
+/********************************************************************************************************/
 
 .flex-container {
   display: flex;
@@ -517,8 +524,8 @@ svg {
   /* fallback for old browsers */
   -webkit-backdrop-filter: blur(10px);
   border: 0.25px solid rgba(255, 255, 255, 0.2);
-  padding-top: 3px !important;
-  padding-bottom: 3px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
 }
 
 #navigation li {
@@ -546,7 +553,7 @@ div#navbarNav.collapse.navbar-collapse {
 }
 
 .navbar-brand img {
-    height: 38px; /* Adjust the height of the logo */
+    height: 32px; /* Adjust the height of the logo */
     width: auto;  /* Keeps the aspect ratio of the logo */
     padding-top: 0px !important;
     padding-bottom: 0px !important;
