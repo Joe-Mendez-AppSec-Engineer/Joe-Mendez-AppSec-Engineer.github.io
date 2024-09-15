@@ -282,7 +282,6 @@ li {
   }
 
   #navigation {
-    padding: 10px 10px !important;
     z-index: 100;
     width: 100% !important;
     background: rgba(39, 39, 39, 0.1);
@@ -297,7 +296,7 @@ li {
     z-index: 100;
     border-radius: 0px !important;
     max-width: 100vw !important;
-    min-width: 100vw;
+    min-width: 100vw !important;
   }
   .fixedNav #navigation {
     position: fixed;
