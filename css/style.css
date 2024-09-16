@@ -541,7 +541,7 @@ svg {
 #navigation li a {
   color: #ffffff;
   font-size: 0.875rem !important;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #navigation li a:hover {
