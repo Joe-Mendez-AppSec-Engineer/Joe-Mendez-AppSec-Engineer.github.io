@@ -1,194 +1,110 @@
-body {
-  color: #ffffff;
-  background-color: #121212 !important;
-  font-family: "Work Sans", sans-serif !important;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
-.work-sans-font {
-  font-family: "Work Sans", sans-serif;
+body {
+  background-color: rgb(51 51 51) !important;
+  font-family: "Inter", sans-serif !important;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.inter-fonts {
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-#document {
-  margin: 0 auto;
+p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
+li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/***********************************************        Landing images                  ******************************/
 .landing-image-container {
   position: relative;
   width: 100%;
   height: 100vh; /* Full viewport height */
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(12 12 12) !important;
 }
 
 /* Common styles for all landing images */
 .landing-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the container */
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
 }
+
 /* Default to desktop image */
 .desktop-image {
   display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 70%;
+  height: auto;
 }
 
 .mobile-image {
   display: none;
 }
+
+/*******************************************PDF Viewer********************************************/
 .pdf-container {
-    width: 80%;
-    height: 80vh; /* Make it responsive but not take full height on desktop */
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc; /* Optional: To show boundaries */
+  width: 80%;
+  height: 80vh; /* Make it responsive but not take full height on desktop */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc; /* Optional: To show boundaries */
 }
 
 .desktop-device {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .mobile-device {
   display: none;
 }
+/*******************************************END********************************************/
 
-p {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-li {
-  font-size: 1.125rem;
-  margin-bottom: 10px;
-}
-
-@media only screen and (max-width: 1024px) {
+/*******************************************     MOBILE @ 1024px  *******************************************/
+@media only screen and (max-width: 1025px) {
   .landing-image {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
-
-  .desktop-image {
-    display: none;
-  }
-  .mobile-image {
-    display: block;
-    width: 100%; /* Make the image responsive */
-    height: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  div.thanks-container {
-    max-width: 65vw; /* Maximum width of the image container */
-    height: 100%;
-  }
-  .thanks-container img {
-    width: 100%; /* Make the image responsive */
-    height: auto;
-  }
-  #navigation {
-    min-width: 550px;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  #navigation {
-    padding: 10px 10px !important;
-    z-index: 100;
-    width: 100% !important;
-    background: rgba(39, 39, 39, 0.1);
-    backdrop-filter: blur(60px);
-    /* fallback for old browsers */
-    -webkit-backdrop-filter: blur(60px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
-    margin-top: 0% !important;
-    margin-left: 0% !important;
-    margin-right: 0% !important;
-    z-index: 100;
-    border-radius: 0px !important;
-    max-width: 100vw !important;
-    min-width: 100vw;
-  }
-  .landing-image {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  .desktop-image {
-    display: none;
-  }
-  .mobile-image {
-    display: block;
-    width: 100%; /* Make the image responsive */
-    height: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  div.thanks-container {
-    max-width: 65vw; /* Maximum width of the image container */
-    height: 100%;
-  }
-  .thanks-container img {
-    width: 100%; /* Make the image responsive */
-    height: auto;
-  }
-  #about {
-    padding: 10 0;
-  }
-  .pdf-container {
-    width: 100%;
-    height: 100%; /* Make it responsive but not take full height on desktop */
-    max-width: 95vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: .1px solid transparent; /* Optional: To show boundaries */
   }
   .desktop-device {
-    display:none;
+    display: block;
   }
 
   .mobile-device {
-    display:block;
-    width: 100%; /* Make the image responsive */
-    height: auto;
+    display: none;
   }
-  ul {
-     padding-left: 5px !important;
-  }
-  .navbar-brand img {
-    max-width: 60vw;
-    padding-top: 1px !important;
-    padding-bottom: 1px !important;
-  }
-}
 
-@media only screen and (max-width: 576px) {
-
-  .landing-image {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
   .desktop-image {
     display: none;
   }
@@ -196,91 +112,21 @@ li {
     display: block;
     width: 100%; /* Make the image responsive */
     height: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .navbar-brand img {
-    max-width: 60vw;
-    padding-top: 1px !important;
-    padding-bottom: 1px !important;
-  }
-  .pdf-container {
-    width: 100%;
-    height: 100%; /* Make it responsive but not take full height on desktop */
-    max-width: 95vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: .1px solid transparent; /* Optional: To show boundaries */
-  }
-  .desktop-device {
-    display:none;
-  }
-
-  .mobile-device {
-    display:block;
-    width: 100%; /* Make the image responsive */
-    height: auto;
-    padding: 0px 10px;
-  }
-
-  #about {
-    padding: 10 0;
-  }
-  h5.heading-section {
-    text-align: center;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .heading-section {
-    text-align: center;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-bottom: 10px;
-  }
-
-  li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-  }
-  container.text-center.quote {
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  h5.quote {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .navbar-toggler-icon {
-    border-color: #ffffff;
-    color: #ffffff;
+  .container d-flex align-items-center {
+    margin-left: 15px;
+    margin-right: 15px;
   }
-  .text-box {
-    max-width: 95vw;
-    width: 100%;
-  }
-  .text-box2 {
-    max-width: 95vw;
-    width: 100%;
-  }
-
   div.thanks-container {
-    max-width: 90vw; /* Maximum width of the image container */
+    max-width: 65vw; /* Maximum width of the image container */
     height: 100%;
   }
   .thanks-container img {
     width: 100%; /* Make the image responsive */
     height: auto;
   }
-
   #navigation {
     z-index: 100;
     width: 100% !important;
@@ -298,23 +144,237 @@ li {
     max-width: 100vw !important;
     min-width: 100vw !important;
   }
+}
+/*******************************************END********************************************/
+
+/*******************************************    MOBILE @ 750px     ********************************************/
+@media only screen and (max-width: 750px) {
+  .landing-image {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  div.thanks-container {
+    max-width: 40vw; /* Maximum width of the image container */
+    height: 100%;
+  }
+  .thanks-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+  .heading-section {
+    text-align: center;
+  }
+  .desktop-device {
+    display: block;
+  }
+
+  .mobile-device {
+    display: none;
+  }
+  ul {
+    padding-left: 10px;
+  }
+  #navigation {
+    z-index: 100;
+    width: 100% !important;
+    background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(60px);
+    /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+    margin-top: 0% !important;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    z-index: 100;
+    border-radius: 0px !important;
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+  }
+  .navbar-brand img {
+    height: 8vw; /* Adjust the height of the logo */
+    width: auto; /* Keeps the aspect ratio of the logo */
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+  }
+}
+/*******************************************END********************************************/
+
+/******************************************* MOBILE @ 576px ********************************************/
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: rgb(51 51 51) !important;
+    font-family: "Fira Sans", sans-serif !important;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .landing-image {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #navbar .navbar.navbar-expand-lg.navbar-dark {
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+  }
+
+  .pdf-container {
+    width: 100%;
+    height: 100%; /* Make it responsive but not take full height on desktop */
+    max-width: 95vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1px solid transparent; /* Optional: To show boundaries */
+  }
+  .desktop-device {
+    display: none;
+  }
+
+  .mobile-device {
+    display: block;
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    padding: 0px 10px;
+  }
+
+  .heading-section {
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  container.text-center.quote {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h5.quote {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navbar-toggler-icon {
+    border-color: rgb(12 12 12) (12 12 12);
+    color: rgb(12 12 12) (12 12 12);
+  }
+  .text-box {
+    max-width: 95vw;
+    width: 100%;
+    border-radius: 30px !important;
+  }
+  .text-box2 {
+    max-width: 95vw;
+    width: 100%;
+  }
+
+  div.thanks-container {
+    max-width: 70vw; /* Maximum width of the image container */
+    height: 100%;
+  }
+  .thanks-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+
+  #navigation {
+    width: 100% !important;
+    background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(60px);
+    /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    border-radius: 0px !important;
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+  }
+
+  .navbar-toggler ml-auto {
+    margin: 0 auto;
+  }
+  .navbar-collapse collapse show {
+    background-color: #121212;
+  }
+
   .fixedNav #navigation {
     position: fixed;
     top: 0;
   }
-  ul {
-     padding-left: 10px !important;
+
+  .headingImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90vw;
+  }
+  .resume-section ul {
+    padding-left: 15px;
+  }
+
+  .navbar-brand img {
+    max-width: 70vw;
+    padding-top: 1px !important;
+    padding-bottom: 3px !important;
   }
 }
+/*******************************************END********************************************/
 
-/********************************************************************************************************/
+.resume-section ul {
+  padding-left: 20px;
+}
+.resume-section2 ul {
+  padding-left: 20px;
+}
 
 .flex-container {
   display: flex;
 }
 
 .text-box {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,21 +382,29 @@ li {
   margin: 0 auto;
   width: 100%;
   max-width: 540px;
-  padding: 14px 70px;
+  padding: 12px 50px;
   background: rgba(18, 18, 18, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   border-radius: 0px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #f1f1f1;
-  z-index: 1;
+  color: rgb(12 12 12) (12 12 12);
+  z-index: 5;
   white-space: nowrap;
-  font-weight: 400;
-  font-style: normal;
+  font-size: 1.75rem;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
 }
-.section {
-  padding: 40px 0px;
+
+.headingImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 540px;
 }
 
 .aboutImage {
@@ -348,30 +416,421 @@ li {
   font-size: large;
 }
 
-.skillsSection.section {
-  background-color: #121212;
-  color: #ffffff;
+/***************************************************    Sections       *****************************************/
+
+#message {
+  margin: 0 auto;
+}
+
+.section {
+  padding: 40px 0;
+  background-color: rgb(12 12 12);
+  color: rgb(12 12 12) (12 12 12);
+  border-radius: 30px;
+  border: solid 1px rgb(51 51 51);
+}
+
+#intro {
+  padding: 40px 0;
+  background-color: rgb(12 12 12);
+  color: rgb(12 12 12);
+  border-radius: 30px;
+  border: solid 1px rgb(51 51 51);
+}
+
+#gap {
+  background-color: rgb(51 51 51);
+  height: 16px;
+  max-height: 16px;
+  min-height: 16px;
+}
+
+#skills {
+  background-color: rgb(12 12 12);
+  color: #fff;
+  border: solid 1px rgb(51 51 51);
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+}
+
+.skills-container {
+  mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  right: 70%;
+  width: 50%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+
+.skills-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 .statsSection h4 {
-  color: #333333;
+  color: rgb(12 12 12);
 }
 
 .contactSection {
-  background-color: #121212 !important;
-  color: #ffffff !important;
+  background-color: rgb(12 12 12) !important;
+  color: rgb(12 12 12) !important;
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
 }
 
 .statsSection {
-  background-color: #121212 !important;
+  background-color: rgb(12 12 12);
+  color: rgb(12 12 12);
+  margin: 0 auto;
+}
+
+.div-wrapper img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#nvidiacolor {
+  color: #76bb02;
+}
+
+#message {
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+}
+
+#about {
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+  color: #ffffff;
+}
+
+#work {
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+}
+
+#numbers {
+  background-color: rgb(12 12 12) !important;
+  border-radius: 30px;
+  object-fit: contain !important;
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+}
+
+#numbers .section .statsSection container text-center {
+  position: relative; /* Ensure the content is above the background image */
+  z-index: 20; /* Content is on top */
+}
+
+#resume {
+  background-color: rgb(12 12 12) !important;
+  border-radius: 30px;
+  /*object-fit: contain !important;*/
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+  margin: 0 auto;
+  color: rgb(12 12 12);
+}
+
+.resume container text-center {
+  position: relative; /* Ensure the content is above the background image */
+  z-index: 20; /* Content is on top */
+}
+
+#slides {
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.about-container {
+  mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 2;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 75%;
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-container img {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.main-container {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 2;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.message-container {
+  mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  right: 70%;
+  width: 40%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+
+.message-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.email-container {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left: 60%;
+  width: 40%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+
+.email-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.background-container {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left: 55%;
+  width: 75%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+
+.background-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.resume-image-container {
+  mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.resume-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.experience-image-container {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left: 60%;
+  width: 50%; /* Make the image span the entire width */
+  height: auto; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+}
+
+.experience-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-container {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left: 65%;
+  width: 35%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+
+.contact-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.resume-section {
+  background-color: rgb(12 12 12);
+  color: #ffffff;
+  border-radius: 30px;
+  /*object-fit: contain !important;*/
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.resume-section1 {
+  background-color: rgb(12 12 12);
+  color: #ffffff;
+  border-radius: 30px;
+  object-fit: contain !important;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.resume-section2 {
+  background-color: rgb(12 12 12);
+  color: #ffffff;
+  border-radius: 30px;
+  object-fit: contain !important;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.resume2-image-container {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left: 70%;
+  width: 40%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+.resume2-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.resume1-image-container {
+  mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  right: 65%;
+  width: 50%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+  z-index: 1;
+}
+.resume1-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Headings */
+.section .heading {
+  text-align: center;
+  width: 100%;
+}
+
+.heading-section {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  font-style: normal;
 }
 
 .skill {
   text-align: center;
 }
 
+.joemendezhughes {
+  border: 1px solid #1334d6;
+  padding: 20px 20px;
+  background-color: rgb(12 12 12);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px 0 #1334d6;
+}
+
 .thanks-container {
-  max-width: 30vw; /* Maximum width of the image container */
+  max-width: 20vw; /* Maximum width of the image container */
   margin: 0 auto;
 }
 
@@ -380,23 +839,30 @@ li {
   height: auto;
 }
 
+/***************************************************    END Sections       *****************************************/
+
 .chart {
   position: relative;
-  max-width: 152px;
-  max-height: 152px;
-  width: 100%;
+  width: 152px;
+  height: 152px;
   display: inline-block;
   text-align: center;
-  align-items: center;
 }
 
-.chart canvas {
+canvas {
   margin: auto;
   display: block;
 }
-.canvas {
-  margin: auto;
-  display: block;
+
+.chart .percent {
+  color: rgb(12 12 12);
+  line-height: 152px;
+  display: inline-block;
+  font-size: 35px;
+}
+
+.chart .percent:after {
+  content: "%";
 }
 
 .squareItem {
@@ -411,8 +877,8 @@ li {
   border-radius: 10px;
   background: rgba(19, 52, 214, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -430,11 +896,11 @@ li {
 }
 
 .squareContent h4 {
-  color: #fff;
+  color: #ffffff;
 }
 
 .counter {
-  color: #fff;
+  color: #ffffff;
 }
 
 .squareIcon {
@@ -442,28 +908,31 @@ li {
   margin-bottom: 20px;
 }
 
+/*********************************************      Buttons       **************************************************/
 .downloadButton {
-  color: #ffffff;
-  font-size: 1.275rem;
-  font-weight: 400;
-  padding: 0.6rem 1.95rem;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 0.6rem 2.2rem;
   display: inline-block;
   margin-top: 20px;
-  border-radius: 35px;
+  border-radius: 999px;
   background: rgba(19, 52, 214, 0.15);
-  box-shadow: 0 4px 12px 0 #00ADD8;
+  box-shadow: 0 5px 12px 0 #00add8;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   outline: none;
-  transition: 0.75s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .downloadButton:hover {
   transition: 0.75s ease-in-out;
-  background: #00ADD8;
-  color: #fff;
+  background: #00add8;
+  color: #000000;
+  box-shadow: 0 0 0 0 #00add8;
   text-decoration: none;
+  border: 0.25px solid transparent;
 }
 
 .downloadButton:hover svg {
@@ -478,60 +947,60 @@ svg {
   stroke: #fff;
   stroke-dasharray: 150 480;
   stroke-dashoffset: 150;
-  transition: 0.75s ease-in-out;
+  transition: 1.5s ease-in-out;
 }
 
 .contactButton {
-  color: #ffffff;
-  font-size: 1.275rem;
-  font-weight: 400;
-  padding: 0.6rem 1.95rem;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 0.6rem 2.2rem;
   display: inline-block;
   margin-top: 20px;
-  border-radius: 35px;
+  border-radius: 999px;
   background: rgba(19, 52, 214, 0.15);
-  box-shadow: 0 4px 14px 0 #00ADD8;
+  box-shadow: 0 5px 12px 0 #00add8;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   outline: none;
-  transition: 0.75s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .contactButton:hover {
   transition: 0.75s ease-in-out;
-  background: #00ADD8;
-  color: #fff;
+  background: #00add8;
+  color: #000000;
+  box-shadow: 0 0 0 0 #00add8;
   text-decoration: none;
+  border: 0.25px solid transparent;
 }
 
 .contactButton:hover svg {
   stroke-dashoffset: -480;
 }
-.section .heading {
-  text-align: center;
-  width: 100%;
-}
-/****************************************      NavBar     **************************************************/
+/*********************************************      End Buttons  **************** ********************************/
+
+/********************************************        NAVBAR       ************   ********************************/
 #navigation {
   z-index: 1000;
   width: 100%;
   max-width: 50vw;
   border-radius: 9999px;
   background: rgba(39, 39, 39, 0.3);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
   /* fallback for old browsers */
-  -webkit-backdrop-filter: blur(6px);
-  border: 0.25px solid rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(8px);
+  border: 0.25px solid rgba(255, 255, 255, 0.4);
   min-width: 750px;
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
   align-items: center;
   white-space: nowrap;
-  padding-top: 4px !important;
-  padding-bottom: 4px !important;
   padding-right: 20px;
+  padding-top: 0%;
+  padding-bottom: 0%;
 }
 
 #navigation li {
@@ -542,11 +1011,10 @@ svg {
 #navigation li a {
   color: #ffffff;
   font-size: 0.875rem !important;
-  font-weight: 300;
 }
 
 #navigation li a:hover {
-  text-decoration: underline solid #00ADD8 2px;
+  text-decoration: underline solid 2px #00add8;
 }
 
 div#navbarNav.collapse.navbar-collapse {
@@ -556,26 +1024,26 @@ div#navbarNav.collapse.navbar-collapse {
 .fixedNav #navigation {
   position: fixed;
   top: 0;
-  margin-top: 1%;
+  margin-top: 0.75%;
 }
 
 .navbar-brand img {
-    height: 32px; /* Adjust the height of the logo */
-    width: auto;  /* Keeps the aspect ratio of the logo */
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+  max-height: 32px; /* Adjust the height of the logo */
+  width: auto; /* Keeps the aspect ratio of the logo */
+  padding: 0px 4px;
 }
 
 .img-responsive {
   width: 100%;
   height: 100%;
 }
-/**************************************** NavBar End  **************************************************/
+
+/********************************************          END NAVBAR                  ********************************/
 
 .loader {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #000;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -585,10 +1053,11 @@ div#navbarNav.collapse.navbar-collapse {
 .loader .inner {
   width: 100%;
   height: 100%;
-  background: url(../img/cloud.gif) center center no-repeat;
-  background-color: #ffffff;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+  background: url(../img/loader.webp) center center no-repeat;
+  background-color: #000;
+  z-index: 1000;
+  align-items: center;
+  object-fit: contain;
 }
 
 div.skill {
@@ -601,26 +1070,20 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 a {
-  color: black;
   text-decoration: none;
 }
 
 .titleMessage {
   position: absolute;
-  width: 100%;
-  height: auto;
-  bottom: 5%;
-  z-index: 5;
-  text-align: center;
-}
-
-.titleMessage .arrow {
-  text-align: center;
-  margin: 5% 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px;
+  bottom: 0;
+  padding-bottom: 2%;
 }
 
 .bounce {
@@ -636,7 +1099,7 @@ a {
   80%,
   100% {
     transform: translateY(0);
-  } /* Closing the first block */
+  }
 
   40% {
     transform: translateY(-30px);
