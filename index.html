@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Anton&family=Mona+Sans:ital,wdth,wght@0,75..125,200..900;1,75..125,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/c75a0766ea.js" crossorigin="anonymous"></script>
@@ -30,26 +31,20 @@
     </div>
     <div id="slides">
         <div class="landing-image-container">
-            <img src="img/cyber-main-bottom.svg" alt="Joe Mendez-Hughes Logo"
-                class="landing-image desktop-image">
-            <img src="img/cyber-main-bottom.svg" alt="Joe Mendez-Hughes Logo"
-                class="landing-image mobile-image">
+            <img src="img/main_logo.svg" alt="Joe Mendez-Hughes Logo" class="landing-image desktop-image">
+            <img src="img/main_logo.svg" alt="Joe Mendez-Hughes Logo" class="landing-image mobile-image">
         </div>
     </div>
 
-        <div class="titleMessage">
-            <div class="heading">
-                <div style="color: #00CC66;" class="arrow bounce">
-                    <i class="fa fa-arrow-down fa-2x" href="#about"></i>
-                </div>
-            </div>
+    <div class="titleMessage">
+        <div style="color: #00CC66;" class="arrow bounce">
+            <i class="fa fa-arrow-down fa-2x" href="#about"></i>
         </div>
     </div>
-
     <nav id="navigation" class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid align-items-center">
             <a class="navbar-brand" href="#">
-                <img src="img/nav.svg" class="img-responsive" alt="NavBar Logo">
+                <img src="img/navbar.svg" class="img-responsive" alt="NavBar Logo">
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,97 +60,56 @@
                     <a class="nav-link" href="#skills">SKILLS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#work">EXPERIENCE</a>
+                    <a class="nav-link" href="#experience">EXPERIENCE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#resume">RESUME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">CONTACT</a>
+                    <a class="nav-link" href="#contact"><i class="fa-solid fa-envelope fa-lg" style="cursor:pointer;"
+                            title="Contact"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <section id="about" class="section">
-        <div class="about-container"><img src="img/city.png"></div>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="text-box">Welcome!</h3>
-                </div>
-                <div class="col-12" style="margin-top: 40px;">
-
-                    <p>In today’s fast-paced digital landscape, organizations depend on a complex ecosystem of technologies,
-                        APIs, databases, and processes that can be challenging to manage. The rapid growth of infrastructure,
-                        increased deployment frequencies, and rising system complexities often introduce critical security risks,
-                        such as vulnerable CI/CD pipelines, infrastructure weaknesses, and codebase vulnerabilities. My expertise
-                        lies in addressing these challenges head-on with precision and effectiveness.
+        <div class="about-container" style="z-index: 0;"><img src="img/navbar.svg"></div>
+        <div class="container-fluid">
+            <div class="title-container">
+                <h3 id="companionMethods" style="color: #fff; z-index: 500;" class="text-box">Welcome</h3>
+            </div>
+            <div class="container text-center" style="z-index: 500;">
+                <div class="col-12" style="margin-top: 10%; margin-bottom: 10%;">
+                    <p style="font-size: 1.5rem !important;">
+                        Dedicated Cybersecurity Engineer with 7 years of comprehensive experience,
+                        specializing in securing software development lifecycles, implementing robust security controls,
+                        proactive security architecture, advanced threat detection, and comprehensive risk mitigation
+                        across cloud, mobile, and container environments.
+                        Expert in integrating security automation, threat modeling, and comprehensive vulnerability
+                        assessment technologies.
                     </p>
-
-                    <p>With extensive experience in large-scale distributed systems and all facets of cybersecurity,
-                        I specialize in designing, monitoring, and securing scalable architectures and platforms. I've worked
-                        across highly regulated environments, where security and reliability are paramount, as well as in fast-moving
-                        startups, where agility and innovation are key. Proficient in a wide range of technologies, including SOC & SOAR platforms,
-                        DAST & SAST in software development, and WebApp testing tools like Metasploit and Burp Suite, I excel at navigating and securing
-                        the most intricate technical landscapes.
-                    </p>
-
-                    <p>Explore my website to learn more about my expertise, past projects, and how I can contribute to
-                        strengthening your team’s overall security.
+                    <p style="font-size: 1.5rem !important;">
+                        Explore my website to discover how I transform complex challenges into innovative solutions,
+                        delivering robust applications and architectures that ensure comprehensive security at every level.
                     </p>
                 </div>
             </div>
         </div>
     </section>
     <div id="gap" class="container-fluid"></div>
-    <section id="numbers" class="section statsSection">
-        <div class="background-container"><img src="img/circle-smirkle.png"></div>
-        <div class="container text-center" style="z-index: 100;">
-            <h3 class="text-box">Numbers</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="squareItem">
-                        <div class="squareInnerContainer" style="height: 300px; min-width: 210px;">
-                            <div class="squareIcon">
-                                <i class="fa-solid fa-calendar-days" style="color:  #00CC66;"></i>
-                            </div>
-                            <div class="squareContent">
-                                <h5>I have over</h5>
-                                <div class="counter" style="font-size: 1.875rem; margin: 10px">7</div>
-                                <h5>years of experience</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="squareItem">
-                        <div class="squareInnerContainer" style="height: 300px; min-width: 210px;">
-                            <div class="squareIcon">
-                                <i class="fa-solid fa-users" style="color:  #00CC66;"></i>
-                            </div>
-                            <div class="squareContent" >
-                                <h5>securing applications that have reached over</h5>
-                                <div class="counter" style="font-size: 1.5rem; margin: 8px;">
-                                    10000000</div>
-                                <h5>users</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="squareItem">
-                        <div class="squareInnerContainer" style="height: 300px; min-width: 210px;">
-                            <div class="squareIcon">
-                                <i class="fa-solid fa-earth-americas" style="color:  #00CC66;"></i>
-                            </div>
-                            <div class="squareContent" >
-                                <h5>in over</h5>
-                                <div class="counter" style="font-size: 1.875rem; margin: 10px">
-                                    26</div>
-                                <h5>countries.</h5>
-                            </div>
-                        </div>
+    <section id="numbers" class="section statsSection" style="min-height: 240px;">
+        <div class="container-fluid">
+            <div class="title-container">
+                <h3 id="companiMethods" class="text-box" style="color: #000000 !important; font-size: 21vw;">Stats
+                </h3>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div>
+                        <p id="ooMethods"
+                            style="margin-left: 40px; color: #000 !important; font-size: 4vw; font-family: 'Anton', sans-serif;">
+
+                            <b style="color:transparent"> </b>
+                            I have over 8 years of experience securing projects that have reached 10 million+ users in 26 countries.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -163,242 +117,310 @@
     </section>
     <div id="gap" class="container-fluid"></div>
     <section id="skills" class="skillsSection section">
-        <div class="container" style="z-index: 100;">
-            <div class="row" style="z-index: 100;">
-                <div class="col-md-12 text-center">
-                    <div class="slides-container">
-                        <h3 class="text-box">Skills</h3>
+        <div class="contact-container" style="z-index: 0;"><img src="img/background_4.png"></div>
+        <div class="container-fluid">
+            <div class="title-container">
+                <h3 id="compaMethods" class="text-box">Skills</h3>
+            </div>
+            <div class="container text-center" style=" margin-top: 2%">
+                <div class="row" style="z-index: 50;">
+                    <div class="col-12">
+                        <h5> <i class="fa-solid fa-angle-left fa-1x"
+                                style="color: #00CC66; margin-right: 10px;"></i>Swipe left or right<i
+                                class="fa-solid fa-angle-right fa-1x" style="color: #00CC66; margin-left: 10px;"></i>
+                            </h>
                     </div>
-                    <h5 style="margin-top: 30px; font-weight: 300;">Swipe left or right</h>
-                </div>
-                <div class="owl-carousel owl-theme">
-                    <div class="skill">
-                        <span class="chart">
-                            <i class="fa-solid fa-shield-halved fa-7x" style="color: #00CC66; margin-top: 5%"></i>
-                            <canvas height="180" width="152" align="center"></canvas>
-                        </span>
-                        <h5>SOC</h5>
-                    </div>
-                    <div class="skill">
-                        <span class="chart">
-                            <i class="fa-solid fa-eye fa-6x" style="color: #00CC66; margin-top: 10%"></i>
-                            <canvas height="180" width="152" align="center"></canvas>
-                        </span>
-                        <h5>XSOAR</h5>
-                    </div>
-                    <div class="skill">
-                        <span class="chart">
-                            <i class="fa-solid fa-bug-slash fa-6x" style="color: #00CC66; margin-top: 10%"></i>
-                            <canvas height="180" width="152" align="center"></canvas>
-                        </span>
-                        <h5>Threat Modeling</h5>
-                    </div>
-                    <div class="skill">
-                        <span class="chart">
-                            <i class="fa-solid fa-crosshairs fa-6x" style="color: #00CC66; margin-top: 12%"></i>
-                            <canvas height="180" width="152" align="center"></canvas>
-                        </span>
-                        <h5>Threat Hunting</h5>
-                    </div>
-                    <div class="skill">
-                        <span class="chart">
-                            <i class="fa-solid fa-code-merge fa-6x" style="color: #00CC66; margin-top: 10%"></i>
-                            <canvas height="180" width="152" align="center" ></canvas>
-                        </span>
-                        <h5>SAST/DAST</h5>
-                    </div>
-                    <div class="skill">
-                        <span class="chart">
-                            <i class="fa-solid fa-terminal fa-6x" style="color: #00CC66; margin-top: 10%"></i>
-                            <canvas height="180" width="152" align="center"></canvas>
-                        </span>
-                        <h5>Burp Suite</h5>
-                    </div>
-                    <div class="skill">
-                        <span class="chart">
-                            <i class="fa-solid fa-code fa-6x" style="color: #00CC66; margin-top: 10%"></i>
-                            <canvas height="180" width="152" align="center"></canvas>
-                        </span>
-                        <h5>Metasploit</h5>
-                    </div>
-                    <div class="skill">
-                        <span class="chart">
-                            <i class="fa-solid fa-cloud fa-6x" style="color: #00CC66; margin-top: 10%"></i>
-                            <canvas height="180" width="152" align="center"></canvas>
-                        </span>
-                        <h5>Cloud Security</h5>
-                    </div>
-                    <div class="skill">
-                        <span class="chart">
-                            <i class="fa-solid fa-mobile-screen-button fa-6x" style="color: #00CC66; margin-top: 10%"></i>
-                            <canvas height="180" width="152" align="center"></canvas>
-                        </span>
-                        <h5>Mobile Security</h5>
-                    </div>
-                    <div class="skill">
-                        <span class="chart">
-                            <i class="fa-brands fa-aws fa-6x" style="color: #00CC66; margin-top: 10%"></i>
-                            <canvas height="180" width="152" align="center"></canvas>
-                        </span>
-                        <h5>AWS</h5>
-                    </div>
-                    <div class="skill">
-                        <span class="chart">
-                            <i class="fa-brands fa-microsoft fa-6x" style="color: #00CC66; margin-top: 10%"></i>
-                            <canvas height="180" width="152" align="center"></canvas>
-                        </span>
-                        <h5>Azure</h5>
-                    </div>
-                    <div class="skill">
-                        <span class="chart">
-                            <i class="fa-brands fa-python fa-8x" style="color: #00CC66; "></i>
-                            <canvas height="180" width="152" align="center"></canvas>
-                        </span>
-                        <h5>Python</h5>
+                    <div class="owl-carousel owl-theme">
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-solid fa-crosshairs fa-6x" style="color: #00CC66; margin-top: 12%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>Threat Hunting</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-solid fa-bug-slash fa-6x" style="color: #00CC66; margin-top: 10%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>Threat Modeling</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-solid fa-laptop-code fa-6x" style="color: #00CC66; margin-top: 10%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>Application Security</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-solid fa-shield-halved fa-7x" style="color: #00CC66; margin-top: 5%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>SOC</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-solid fa-eye fa-6x" style="color: #00CC66; margin-top: 10%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>XSOAR</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-solid fa-greater-than fa-6x" style="color: #00CC66; margin-top: 10%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>Splunk</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-brands fa-aws fa-6x" style="color: #00CC66; margin-top: 10%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>AWS</h5>
+                        </div>
                     </div>
                 </div>
+                <div class="row" style="z-index: 50;">
+                    <div class="owl-carousel owl-theme">
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-solid fa-code-merge fa-6x" style="color: #00CC66; margin-top: 10%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>SAST/DAST</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-solid fa-terminal fa-6x" style="color: #00CC66; margin-top: 10%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>Burp Suite</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-solid fa-m fa-6x" style="color: #00CC66; margin-top: 10%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>Metasploit</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-brands fa-docker fa-6x"
+                                    style="color: #00CC66; margin-top: 10%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>Container Security</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-solid fa-mobile-screen-button fa-6x"
+                                    style="color: #00CC66; margin-top: 10%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>Mobile Security</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-brands fa-microsoft fa-6x" style="color: #00CC66; margin-top: 10%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>Azure</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-solid fa-cloud fa-6x" style="color: #00CC66; margin-top: 10%"></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>Cloud Security</h5>
+                        </div>
+                        <div class="skill">
+                            <span class="chart">
+                                <i class="fa-brands fa-python fa-8x" style="color: #00CC66; "></i>
+                                <canvas height="180" width="152" align="center"></canvas>
+                            </span>
+                            <h5>Python</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <div id="gap" class="container-fluid"></div>
-    <section id="work" class="section">
-        <div class="experience-image-container "><img src="img/circuit.webp"></div>
-        <div class="container">
-            <div class="heading text-center">
-                <h3 class="text-box">Experience</h3>
-            </div>
-        </div>
-    </section>
-    <div id="gap" class="container-fluid"></div>
-    <section class="resume-section">
-        <div class="container"
-            style="border: .5px #00CC66; border-style: solid none; padding-top: 10px; padding-bottom: 10px; z-index: 50;">
-            <h5 class="heading-section" style="font-weight: bold;">SENIOR CYBERSECURITY ENGINEER</h5>
-            <h5 class="heading-section" style="font-weight: bold;">Dynamo Technologies, Washington, DC</h5>
-            <h5 class="heading-section" style="font-style: italic;">June 2023 - May 2024</h5>
-            <ul>
-                <li>Implemented and optimized Palo Alto XSOAR automation, decreasing incident response time by 40% and
-                    automating 70% of routine security workflows, improving overall security team efficiency.</li>
-                <li>Designed robust security measures by utilizing the STRIDE method, ensuring all facets of
-                    development were secure.</li>
-                <li>Monitored and analyzed security events in a 24/7 Security Operations Center (SOC), identifying and
-                     mitigating over 500 potential threats per month, reducing incident response time by 30%.</li>
-                <li>Engaged with Red Teams to simulate attack scenarios and harden defense mechanisms, improving threat
-                     detection accuracy by 20%.</li>
-                <li>Developed CI/CD pipelines using Jenkins and GitHub Actions, automating deployments and reducing release
-                    times by 40%.</li>
-                <li>Led security effort to integrate SAST and SCA into CI/CD pipelines, identifying and mitigating
-                    vulnerabilities early in the development (SDLC) process.</li>
-            </ul>
-    </section>
-    <div id="gap" class="container-fluid"></div>
-    <section class="resume-section">
-        <div class="container"
-            style="border: .5px #00CC66; border-style: solid none; padding-top: 10px; padding-bottom: 10px;">
-            <h5 class="heading-section" style="font-weight: bold;">SENIOR CYBERSECURITY ENGINEER</h5>
-            <h5 class="heading-section" style="font-weight: bold;">Deep Cloud IQ, New York, NY</h5>
-            <h5 class="heading-section" style="font-style: italic;">July 2021 - September 2023</h5>
-            <ul>
-                <li>Enhanced the security posture of a multi-cloud infrastructure by implementing comprehensive security
-                    controls, including identity and access management (IAM), network segmentation, and automated compliance
-                    checks, resulting in a 40% reduction in security incidents and a 25% improvement in audit readiness.
-                <li>Collaborated with four different teams to integrate security into the software development lifecycle,
-                    reducing the number of security defects substantially.</li>
-                <li>Architected SOAR and SOC solutions, reducing incident response time and improving monitoring efforts.</li>
-                <li>Implemented a proactive threat-hunting program that reduced false positives by 40% and enhanced detection
-                    of low-noise attacks.</li>
-            </ul>
-        </div>
-    </section>
-    <div id="gap" class="container-fluid"></div>
-    <section class="resume-section">
-        <div class="container"
-            style="border: .5px #00CC66; border-style: solid none; padding-top: 10px; padding-bottom: 10px;">
-            <h5 class="heading-section" style="font-weight: bold;">SOFTWARE ENGINEER</h5>
-            <h5 class="heading-section" style="font-weight: bold;">Millennial Shift, Phoenix, AZ</h5>
-            <h5 class="heading-section"  style="font-style: italic;">October 2020 - June 2021</h5>
-            <ul>
-                <li>Developed efficient and scalable SOAP and RESTful APIs, ensuring seamless communication between
-                    systems and improving overall performance.</li>
-                <li>Engineered scalable and secure solutions, safeguarding sensitive data for the first, third, and
-                    fifth-largest wholesale insurance companies in the U.S.</li>
-                <li>Analyzed, debugged, and optimized complex software systems, improving system stability and
-                    performance.</li>
-                <li>Ensured data integrity and quality by implementing error-handling mechanisms and validation
-                    routines.</li>
-                <li>Collaborated with frontend and DevOps teams to ensure seamless integration and deployment of backend
-                    services in a microservices architecture.</li>
-            </ul>
-        </div>
-    </section>
-    <div id="gap" class="container-fluid"></div>
-    <section class="resume-section">
-        <div class="container"
-            style="border: .5px #00CC66; border-style: solid none; padding-top: 10px; padding-bottom: 10px;">
-            <h5 class="heading-section" style="font-weight: bold;">CYBERSECURITY ANALYST</h5>
-            <h5 class="heading-section"style="font-weight: bold;">Prizelogic, Scottsdale, AZ</h5>
-            <h5 class="heading-section"  style="font-style: italic;">February 2018 - May 2020</h5>
-            <ul>
-                <li>Monitored and analyzed network traffic and endpoint behavior for anomalies using IDS/IPS tools and
-                    SIEM (QRadar, Elastic Stack) to detect potential threats in real time.</li>
-                <li>Assisted in setting up security scanning in CI/CD workflows, reducing beugs to production by 20%.</li>
-                <li>Worked closely with senior cybersecurity engineers to design and optimize network and firewall security protocols.</li>
-                <li>Assisted in incident response by identifying the extent of security breaches, isolating compromised
-                    systems, and developing remediation plans.</li>
-                <li>Built comprehensive reports for senior management detailing cyber threats, trends,
-                    and mitigation strategies to strengthen the organization’s security posture.</li>
-            </ul>
-        </div>
-    </section>
-    <div id="gap" class="container-fluid"></div>
-    <section id="resume">
-        <div class="resume-image-container"><img src="img/connectors.webp"></div>
-        <div class="container text-center" style="padding-bottom: 20px; z-index: 50;">
-            <div class="col-12" style="margin-top: 30px; margin-bottom: 40px; z-index: 50;">
-                <h3 class="text-box">Resume</h3>
-            </div>
-            <div class="pdf-container">
-                <iframe src="img/Joe Mendez-Hughes Resume.pdf" class="resume-image desktop-device" frameborder="0"
-                    alt="Joe Mendez-Hughes Resume.pdf"></iframe>
-                <img src="img/Joe Mendez-Hughes Resume.jpg" class="resume-image mobile-device"
-                    alt="Joe Mendez-Hughes Resume Image" style="z-index: 100;">
-            </div>
-            <div class="col-12" style="margin: 0 auto;">
-                <a href="img/Joe Mendez-Hughes Resume.docx" download class="downloadButton"
-                    style="margin-top: 30px;">Download</a>
-                <h6 style="margin: 20px;">Download resume as a Word .docx file</h6>
-            </div>
-        </div>
-    </section>
-    <div id="gap" class="container-fluid"></div>
-    <section id="contact" class="contactSection section">
-        <div class="email-container"><img src="img/puterandcubes.webp"></div>
-        <div class="container text-center">
-            <div class="heading">
-                <h3 class="text-box">Contact</h3>
-                <a href="mailto:joemendezhughes@gmail.com" email class="contactButton"
-                    style="margin-top: 55px;">Email</a>
-                <h5 style="margin-top: 55px; ">Press or click to get in touch!</h5>
-            </div>
-        </div>
-    </section>
-    <div id="gap" class="container-fluid"></div>
-    <section id="thanks" class="thanksSection section" style="padding-bottom: 0px !important; padding-top: 50px">
-        <div class="container text-center quote">
-            <h5 class="quote" >Dear Guest,<br>
-                Thank you for visiting my website! I truly appreciate your time and interest, and I look forward to
-                connecting with you soon!
-            </h5>
-            <div class="thanks-container" style="padding-top: 30px;">
-                <img src="img/cyber-main-bottom.svg" alt="Logo">
-            </div>
-            <p style="color: #666; padding-top: 30px; font-size: small; margin-bottom: 0px !important; font-family: sans-serif;">
-                &copy;2024 Joe Mendez-Hughes
-            </p>
-        </div>
-    </section>
-    <div id="gap" class="container-fluid"></div>
 
+    <div id="gap" class="container-fluid"></div>
+    <div id="experience" class="title-container">
+        <h3 id="compMethods" class="text-box"
+            style="font-size: 20vw; color: #000000 !important; padding-bottom: 10px; padding-top: 10px;">Experience</h3>
+    </div>
+    <div id="gap" class="container-fluid"></div>
+    <section class="resume-section">
+        <div class="resume-image-container" style="z-index: 0 !important;"><img src="img/dynamo.png"></div>
+        <div class="resume-container" style="z-index: 500; ">
+            <h5 class="heading-section1" style="z-index: 500; text-shadow: 0 1px 0 black;">Senior Cybersecurity Engineer</h5>
+            <h5 class="heading-section" style="z-index: 500;">Dynamo Technologies, Washington, DC</h5>
+            <h5 class="heading-section" style="z-index: 500; margin-bottom: 30px;">September 2023 - May 2024</h5>
+            <li class="fixedWidth">
+                Pioneered advanced threat detection strategies using STRIDE threat modeling, significantly enhancing system security across development lifecycles.
+            </li>
+            <li class="fixedWidth">
+                Implemented advanced API security protocols, emphasizing robust authentication, strict authorization controls, and rigorous data validation to protect mission-critical sensitive information.
+            </li>
+            <li class="fixedWidth">
+                Spearheaded security integration in CI/CD pipelines through Static Application Security Testing (SAST) and Software Composition Analysis (SCA) implementation.
+            </li>
+
+    </section>
+    <div id="gap" class="container-fluid"></div>
+    <section class="resume-section">
+        <div class="resume-image-container" style="z-index: 1;"><img src="img/deepcloudiq.png"></div>
+        <div class="resume-container">
+            <h5 class="heading-section1">Senior Cybersecurity Engineer</h5>
+            <h5 class="heading-section">Deep Cloud IQ, New York, NY</h5>
+            <h5 class="heading-section" style="z-index: 500; margin-bottom: 30px;">July 2021 - September 2023</h5>
+            <li class="fixedWidth">
+                Developed and implemented a data-driven threat-hunting program that decreased false positives by 40% and enhanced detection of low-noise, sophisticated attacks.
+            </li>
+            <li class="fixedWidth">
+                Strategically integrated SAST early into the software development lifecycle, proactively preventing known vulnerabilities and establishing a "Shift Left" development culture.
+            </li>
+            <li class="fixedWidth">
+                Facilitated cross-functional security integration across four teams, reducing security defects by 35% and improving overall development security.
+            </li>
+        </div>
+    </section>
+    <div id="gap" class="container-fluid"></div>
+    <section class="resume-section">
+        <div class="resume-image-container" style="z-index: 1;"><img src="img/mshiftblue.png"></div>
+        <div class="resume-container">
+            <h5 class="heading-section1">Software Engineer</h5>
+            <h5 class="heading-section">Millennial Shift, Phoenix, AZ</h5>
+            <h5 class="heading-section" style="z-index: 500; margin-bottom: 30px;">October 2020 - June 2021</h5>
+            <li class="fixedWidth">
+                Architected and developed secure, scalable APIs and backend solutions for leading wholesale insurance companies, ensuring stringent data protection and system integrity.
+            </li>
+        </div>
+    </section>
+    <div id="gap" class="container-fluid"></div>
+    <section class="resume-section">
+        <div class="resume-image-container" style="z-index: 1;"><img src="img/prizelogic.png"></div>
+        <div class="resume-container">
+            <h5 class="heading-section1">Junior Cybersecurity Analyst</h5>
+            <h5 class="heading-section">Prizelogic, Scottsdale, AZ</h5>
+            <h5 class="heading-section" style="z-index: 500; margin-bottom: 30px;">February 2018 - May 2020</h5>
+            <li class="fixedWidth">
+                Gained foundational knowledge in application security principles and tools.
+            </li>
+            <li class="fixedWidth">
+                Proactively conducted vulnerability assessments, delivering clear, actionable reports highlighting potential exploit vectors and recommended mitigation strategies.
+            </li>
+        </div>
+    </section>
+    <div id="gap" class="container-fluid"></div>
+    <section class="resume-section">
+        <div class="resume-image-container" style="z-index: 1;"><img src="img/joemendezhughes.png"></div>
+        <div class="resume-container">
+            <h5 class="heading-section1">Mobile Engineer</h5>
+            <h5 class="heading-section">Self, Las Vegas, NV</h5>
+            <h5 class="heading-section" style="z-index: 500; margin-bottom: 30px;">January 2017 - February 2018</h5>
+            <li class="fixedWidth">
+                Independently designed a 5-star iOS mobile app with international reach, launched in 26 countries.
+            </li>
+            <li class="fixedWidth">
+                Demonstrated entrepreneurial skills and end-to-end product development capabilities.
+            </li>
+        </div>
+    </section>
+    <div id="gap" class="container-fluid" style="display: none;"></div>
+    <section id="methodology" class="section" style="display:none ;">
+        <div class="contact-container"></div>
+        <div class="container-fluid">
+            <div class="title-container">
+                <h3 id="comMethods" class="text-box">Cyber</h3>
+            </div>
+            <div class="container text-center"
+                style="line-height: 50%; align-items: center; justify-content: center; text-align: center;">
+
+                <div class="paragraph">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="gap" class="container-fluid" style="display: none;"></div>
+    <section id="research" class="section" style="display: none;">
+        <div class="research-container"></div>
+        <div class="container-fluid">
+            <div class="title-container">
+                <h3 id="coMethods" class="text-box">Cyber</h3>
+            </div>
+            <div class="container text-center">
+                <div class="paragraph">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="gap" class="container-fluid"></div>
+    <section id="resume" style="padding: 0px !important; display: none;">
+        <div class="contact-container"></div>
+        <div class="container-fluid">
+            <div class="title-container" style="margin-bottom: 40px; z-index: 500;">
+                <h3 id="cMethods" class="text-box" style=" z-index: 100;"></h3>
+            </div>
+        </div>
+    </section>
+    <section id="contact" style="padding: 0px !important">
+        <div class="contact-container"><img src="img/background_1.png"></div>
+        <div class="container-fluid" style="z-index: 500;">
+            <div class="title-container" style=" z-index: 500; display: flex; align-items: center;">
+                <h3 id="ccMethods" class="text-box"
+                    style=" z-index: 500; display: inline-block; vertical-align: middle">Let's Talk</h3>
+
+            </div>
+            <div class="container text-center"
+                style="padding-bottom: 20px; z-index: 500; margin: 0 auto; display: inline;">
+                <div class="col-12">
+                    <a href="mailto:joemendezhughes@gmail.com" email class="contactButton" style="z-index: 500;"><i
+                            class="fa-solid fa-envelope fa-7x"></i></a>
+                    <h3 style="margin: 60px; z-index: 500; color: #ffffff; font-size: 1.75rem;">If you're interested in
+                        starting a conversation,
+                        email me at: <b style="word-wrap: break-word;"><a href="mailto:email@gmail.com"
+                                style="color: #ffffff;">joemendezhughes@gmail.com</a></b> or click/press the button
+                        above</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="gap" class="container-fluid"></div>
+    <section id="footer" class="section" style="padding-bottom: 0px !important;">
+        <div class="container-fluid" style="z-index: 500">
+            <div class="title-container">
+                <h3 id="cciMethods" class="text-box" style="color: #000 !important; ">Thanks!</h3>
+            </div>
+            <div class="container text-center" style="margin: auto; margin-top: 10%;">
+                <div class="paragraph">
+                    <p style="font-size: 2rem !important; margin: auto; color: #000 !important">
+                        Dear Guest,</br>
+                        Thank you for visiting my website! I truly appreciate your time and interest, and I look forward
+                        to connecting with you soon!
+                    </p>
+                </div>
+                <div class="footer-image" style="padding-bottom: 25px;">
+                    <img src="img/main_logo.svg" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="smallGap" class="container-fluid"></div>
+    <div class="copyright" style="background-color: #000;">
+        <h6
+            style="color: #fff; font-family: sans-serif; font-size: .8rem; z-index: 100; margin-bottom: 0px !important; text-align: center;">
+            &copy;2024 Joe Mendez-Hughes</h6>
+    </div>
+    <div id="smallGap" class="container-fluid"></div>
+
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="js/countUp.js"></script>
     <script src="js/countUp-jquery.js"></script>
     <script src="js/jquery.superslides.min.js"></script>
