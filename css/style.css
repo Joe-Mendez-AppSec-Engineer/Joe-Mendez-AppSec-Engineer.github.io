@@ -838,7 +838,7 @@ li {
   display: flex; /* For layout purposes, adjust if necessary */
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
-
+  height: 100vh;
 }
 
 .about-container {
