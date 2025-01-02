@@ -8,20 +8,6 @@ function newFunction() {
 
     });
 
-    new TypeIt("#companionMethods", {
-        speed: 120,
-        waitUntilVisible: true,
-        cursor: false,
-    })
-        .go();
-
-    new TypeIt("#compMethods", {
-        speed: 120,
-        waitUntilVisible: true,
-        cursor: false,
-    })
-        .go();
-
     $(document).ready(function () {
 
         $('#slides').superslides({});
