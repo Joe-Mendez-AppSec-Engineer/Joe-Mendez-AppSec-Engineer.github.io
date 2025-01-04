@@ -337,6 +337,17 @@ li {
     height: auto !important;
 
   }
+    #slides h1, h5 {
+    text-align: center !important;
+    padding: 10px 10px !important;
+  }
+  #slides .col, .row, h1, h4, h6, a.button-2{
+    text-align: center !important;
+
+    padding: 10px 10px !important;
+    margin: 0 auto !important;
+    margin-left: 0px !important;
+  }
   #slides .col{
     font-size: 100% !important;
   }
