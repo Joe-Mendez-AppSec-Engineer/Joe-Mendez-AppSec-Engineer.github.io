@@ -500,7 +500,6 @@ li {
   .heading-section {
     max-width: 85vw !important;
     text-align: center;
-
   }
   .heading-section1 {
     max-width: 85vw !important;
@@ -565,7 +564,7 @@ li {
   }
   #slides h1, h5 {
     text-align: center !important;
-    margin-left: auto !important;
+
     padding: 10px 10px !important;
   }
   #ooMethods {
