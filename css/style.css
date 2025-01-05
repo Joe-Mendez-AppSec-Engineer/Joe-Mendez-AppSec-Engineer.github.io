@@ -986,6 +986,7 @@ section {
 /* CSS */
 .button-1 {
   background-color: #ffffff;
+  color: #000000;
   border-radius: 2.25rem;
   font-size: 16px;
   font-weight: 400;
@@ -1014,6 +1015,7 @@ section {
 }
 .button-2 {
   background-color: #ffcb06;
+  color: #000000;
   border-radius: 2.25rem;
   font-size: 16px;
   font-weight: 400;
