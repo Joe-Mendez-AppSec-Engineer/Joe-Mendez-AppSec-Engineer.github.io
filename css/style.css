@@ -986,21 +986,18 @@ section {
 /* CSS */
 .button-1 {
   background-color: #ffffff;
-  border-radius: 999px;
+  border-radius: 2.25rem;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 33px;
   border-style: none;
   box-sizing: border-box;
-  color: #000;
   cursor: pointer;
   display: inline-block;
   font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  height: 60px;
-  line-height: 34px;
   list-style: none;
   margin: 0;
   outline: none;
-  padding: 12px 28px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -1017,21 +1014,18 @@ section {
 }
 .button-2 {
   background-color: #ffcb06;
-  border-radius: 999px;
+  border-radius: 2.25rem;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 33px;
   border-style: none;
   box-sizing: border-box;
-  color: #000;
   cursor: pointer;
   display: inline-block;
   font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  height: 60px;
-  line-height: 34px;
   list-style: none;
   margin: 0;
   outline: none;
-  padding: 12px 28px;
   position: relative;
   text-align: center;
   text-decoration: none;
