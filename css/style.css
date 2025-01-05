@@ -218,11 +218,14 @@ li {
     background-color: #000000 !important;
     height: auto !important;
   }
+  .resume-section {
+    max-width: 98vw;
+  }
 }
 /*******************************************END********************************************/
 
 /*******************************************    MOBILE @ 750px     ********************************************/
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 769px) {
   .landing-image {
     position: relative;
     top: 50%;
@@ -284,6 +287,9 @@ li {
     max-height: 12px !important;
     min-height: 12px !important;
     box-shadow: none;
+  }
+    .resume-section {
+    max-width: 95vw;
   }
 }
 /*******************************************END********************************************/
