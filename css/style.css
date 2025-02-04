@@ -148,6 +148,11 @@ li {
   font-weight: 400;
   font-style: normal;
 }
+.logo-image img {
+    height: 100%;
+    max-width: 97%;
+    width: 475px;
+}
 
 #document {
   margin: 0 auto;
@@ -484,7 +489,7 @@ li {
     margin-left: 15px !important;
   }
   .logo-image img {
-    height: 6vh !important;
+    height: 100%;
   }
   .col {
     margin-top: 100px;
